@@ -143,9 +143,10 @@ div#head_bottom_con3 {
     overflow: hidden;
     padding-left: 0vw;
     position: relative;
-    width: 37%;
-    background: linear-gradient(180deg, rgba(97, 97, 97, 0.22) 0%, rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0.22) 0%, rgba(53, 53, 53, 0.20) 0.01%, rgba(97, 97, 97, 0.20) 100%);
-    backdrop-filter: blur(20px);
+    width: auto;
+    /* background: linear-gradient(180deg, rgba(97, 97, 97, 0.22) 0%, rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0.22) 0%, rgba(53, 53, 53, 0.20) 0.01%, rgba(97, 97, 97, 0.20) 100%);
+    backdrop-filter: blur(20px); */
+    margin-top: 4%;
 }
 
 .secondCol {
@@ -209,7 +210,7 @@ div#head_bottom_con3 {
 .image_text {
     height: auto;
     width: auto;
-    margin-left: -4%;
+    margin-left: -2%;
     
 }
 
@@ -219,7 +220,7 @@ div#head_bottom_con3 {
     flex-direction: column;
     flex-wrap: nowrap;
     /* gap: 4%; */
-    height: 100%;
+    height: 79%;
     justify-content: center;
     align-items: flex-start;
     /* padding-left: 11%; */
@@ -258,8 +259,8 @@ h1#title {
     justify-content: flex-start;
     width: 100%;
     padding-top: 0%;
-    padding-left: 6%;
-    padding-right: 6%;
+    padding-left: 2%;
+    padding-right: 66%;
 }
 
 
@@ -308,7 +309,7 @@ h2#subTitle {
     align-items: center;
     flex-wrap: nowrap;
     gap: 1vw;
-    padding-left: 6%;
+    padding-left: 2%;
     /* margin-top: -8%; */
 }
 
