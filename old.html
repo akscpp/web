@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+   <link rel="icon" href="favicon.png" type="image/png">  
+     <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://awwzo.com">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Awwzo">
+  <meta property="og:description" content="Premium Pet Boarding">
+  <meta property="og:image" content="https://awwzo.com/awwzo_icon.jpg">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="awwzo.com">
+  <meta property="twitter:url" content="https://awwzo.com">
+  <meta name="twitter:title" content="Awwzo">
+  <meta name="twitter:description" content="Premium Pet Boarding">
+  <meta name="twitter:image" content="https://awwzo.com/awwzo_icon.jpg">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 , maximum-scale=1">
+    <meta name="keywords" content="pet boarding , pet ,  boarding ">
+    <meta name="robots" content="INDEX , FOLLOW">
+    <link rel="stylesheet" href="testing.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Roboto+Mono:wght@100;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Work Sans' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Chela One' rel='stylesheet'>
+    <title>Awwzo</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+
+        const btn1Text = document.querySelector('.btn1-text');
+        const btn2Text = document.querySelector('.btn2-text');
+
+        window.addEventListener('resize', () => {
+            if (window.innerWidth <= 808) {
+                btn1Text.textContent = btn1Text.dataset.originalText;
+                btn2Text.textContent = "Get Started";
+            } else {
+                btn1Text.textContent = btn1Text.dataset.originalText;
+                btn2Text.textContent = btn2Text.dataset.originalText;
+            }
+        });
+    </script>
+
+
+    <style>
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 60px;
+            background-color: rgb(27, 26, 30);
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+        }
+
+        .header .logo img {
+            width: 54.0000004869779px;
+
+            height: 75.0000006763582px;
+
+            transform: rotate(-10deg);
+            padding-top: 5px;
+
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <!-- <div class="header">
+
+        <div class="logo">
+            Add your logo image here
+            <img src="logo.png" alt="Logo" id="logoAwwzo">
+        </div>
+        <div class="titleHeader">
+            Add your title here
+            <h1>About Us</h1>
+        </div>
+
+
+    </div> -->
+
+    <div class="primary">
+
+
+        <div class="secondary">
+            <div class="tertiary">
+                <div class="firstRow">
+
+                    <!-- <div class="tite">
+                        <div class="contents2">
+
+                        </div>
+                    </div> -->
+                    <div class="firstCol">
+                        <div class="contents">
+                            <div class="heading" id="top_header">
+                                <h1 id="ppt">
+                                    AWWZO</h1>
+                            </div>
+                            <div class="subText">
+                                <h2 id="sst">
+                                    Experience a new level of premium pet boarding with our state of the art
+                                    facility
+                                    and highly trained staff.
+                                </h2>
+                            </div>
+                            <div class="buttons">
+                                <div class="btn1">
+                                    <h2 class="btn1-text" onclick="scrollToForm()">
+                                        Claim Access</h2>
+                                </div>
+
+                                <div class="btn2">
+                                    <h2 class="btn2-text" onclick="scrollToServices()">Services</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="secondCol">
+                            <!-- <img class="image" src="./image 35.png" alt="landing-picture" /> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="secondRow" id="target1">
+                    <div class="rowFirst">
+                        <p class="rowTitles"><b>OUR SERVICES</b></p>
+                        <div class="services">
+                            <div class="servicesdetails">
+                                <img src="boarding.png">
+                                <p class="titleServices">BOARDING</p>
+                                <p class="texts1">OVERNIGHT STAY: A safe and comfortable home for pets.</p>
+                            </div>
+                            <div class="servicesdetails">
+                                <img src="day-care.png">
+                                <p class="titleServices">DAY CARE</p>
+                                <p class="texts1">LIMITED STAY : A supervised daytime care for pets.</p>
+
+                            </div>
+                            <div class="servicesdetails">
+                                <img src="grooming.png">
+                                <p class="titleServices">GROOMING</p>
+                                <p class="texts1">
+
+
+                                    We enhance your pet's physical appearance and hygiene.</p>
+
+                            </div>
+                            <div class="servicesdetails">
+                                <img src="training.png">
+                                <p class="titleServices">TRAINING</p>
+                                <p class="texts1">We teach and reinforce desired behaviours in pets.</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div id="thirdRow">
+                    <div class="rowFirst">
+                        <p class="rowTitles"><b>WHY US?</b></p>
+                        <div class="whyCol">
+                            <div class="services">
+                                <div class="servicesdetails2">
+                                    <img src="squeaky_clean.png">
+                                    <p class="titleServices">SQUEAKY CLEAN</p>
+                                    <p class="texts2">We maintain the highest sanitation standards</p>
+
+                                </div>
+                                <div class="servicesdetails2">
+                                    <img src="observe.png">
+                                    <p class="titleServices">OBSERVE</p>
+                                    <p class="texts2">Stay connected with your pup through our camera system</p>
+
+                                </div>
+                                <div class="servicesdetails2">
+                                    <img src="pure_air.png">
+                                    <p class="titleServices">PURE AIR</p>
+                                    <p class="texts2">Top-tier HVAC system, we ensure 100% fresh air circulation with
+                                        each cycle
+                                    </p>
+                                </div>
+
+
+
+                            </div>
+                            <div class="services">
+
+                                <div class="servicesdetails2">
+                                    <img src="sure_footed.png">
+                                    <p class="titleServices">SURE FOOTED</p>
+                                    <p class="texts2">Our textured floors offer the perfect paw-friendly grip
+                                        throughout</p>
+                                </div>
+                                <div class="servicesdetails2">
+                                    <img src="in_and_out.png">
+                                    <p class="titleServices">IN AND OUT</p>
+                                    <p class="texts2">Seamless access to indoor-outdoor areas for comfort in
+                                        any
+                                        weather</p>
+
+                                </div>
+
+                                <div class="servicesdetails2">
+                                    <img src="dive_in.png">
+                                    <p class="titleServices">DIVE IN</p>
+                                    <p class="texts2">Dive into our in-ground saltwater pool</p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="lastRow">
+                    <!-- <div class="emptyBox"></div> -->
+                    <div class="forms" id="target">
+                        <h2 style="font-family: Chela One;letter-spacing: 2px;">AWWZO <span class="logo-small"><img
+                                    src="logo.png" alt="Small Logo"></span>
+                        </h2>
+                        <h1 style="font-family: Work Sans;color: rgb(8,49,66);font-weight: 600;">Claim Exclusive
+                            Access</h1>
+                        <form id="contactForm" method="POST" name="google-sheet">
+                            <div class="form-group">
+                                <label for="name" style="padding-bottom: 7px;
+                                ">Name :</label>
+                                <input type="text" id="name" name="name" placeholder="Your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" style="padding-bottom: 7px;
+                                    ">Email :</label>
+                                <input type="email" id="email" name="email" placeholder="Your email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone" style="padding-bottom: 7px;
+                                    ">Mobile Number :</label>
+                                <input type="text" id="phone" name="phone" placeholder="Mobile No." required>
+                            </div>
+                            <div class="form-group">
+                                <label for="petName" style="padding-bottom: 7px;
+                                    ">Pet's name :</label>
+                                <input type="text" id="petName" name="petName" placeholder="Pet's name" required>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="petAge" style="padding-bottom: 7px;">Pet's DOB :</label>
+                                    <input type="text" id="petAge" name="petAge" placeholder="DOB" required>
+                                </div>
+                                <div class="form-group" id="petBreedContainer">
+                                    <label for="petBreed" style="padding-bottom: 7px;
+                                        ">Pet's breed:</label>
+                                    <input type="text" id="petBreed" name="petBreed" placeholder="Pet's breed" required>
+                                </div>
+                            </div>
+
+
+                            <div class="form-group claim-button">
+                                <input type="submit" value="CLAIM" name="submit">
+                            </div>
+
+                            <!-- <div class="form-group">
+                                <label>Notify via email:</label>
+                                <input type="checkbox" id="notifyEmail" name="notifyEmail">
+                            </div> -->
+                        </form>
+                    </div>
+
+
+
+
+
+                    <!-- </div> -->
+                </div>
+                <!-- <div class="contactUs">
+                </div> -->
+                <div class="footer">
+                    <div class="socials">
+                        <a href="https://twitter.com/iamawwzo"><img class="social-icon" src="x.svg"
+                                alt="Twitter (X)"></a>
+                        <a href="https://www.linkedin.com/company/awwzo"><img class="social-icon" src="lin.svg"
+                                alt="LinkedIn"></a>
+                        <a href="mailto:rahul@awwzo.com"><img class="social-icon" src="mail.svg" alt="Email"></a>
+                        <!-- <a href="#"><img src="icon_.png" alt="icon"></a> -->
+
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="chat-button" id="openChat">Chat</div>
+
+
+    <div class="chat-form-container">
+        <div class="forms">
+            <h2>Awwzo <span class="logo-small"><img src="small_logo.png" alt="Small Logo"></span>
+            </h2>
+            <h1 style="font-family: Work Sans;">Get Exclusive Access</h1>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Enter your name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Enter your email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="petName">Enter your pet's name:</label>
+                    <input type="text" id="petName" name="petName" required>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="petAge">Enter your pet's age:</label>
+                        <input type="number" id="petAge" name="petAge" min="0" required>
+                    </div>
+                    <div class="form-group" id="petBreedContainer">
+                        <label for="petBreed">Enter your pet's breed:</label>
+                        <input type="text" id="petBreed" name="petBreed" required>
+                    </div>
+                </div>
+
+
+                <div class="form-group claim-button">
+                    <input type="submit" value="CLAIM">
+                </div>
+
+                <div class="form-group">
+                    <label>Notify via email:</label>
+                    <input type="checkbox" id="notifyEmail" name="notifyEmail">
+                </div>
+            </form>
+        </div>
+    </div> -->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwkogSIMrVWJu842G1GbXvE-kJY4QDSZdNlz4LPO7wEVwRLmuD0e3ewkNr28pkSDz39Eg/exec'
+        const form = document.forms['google-sheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                .catch(error => console.error('Error!', error.message))
+        })
+
+
+        function scrollToServices() {
+            const servicesSection = document.getElementById("target1");
+            if (servicesSection) {
+                servicesSection.scrollIntoView({ behavior: "smooth" });
+            }
+        }
+        function scrollToForm() {
+            const formSection = document.getElementById("target");
+            if (formSection) {
+                formSection.scrollIntoView({ behavior: "smooth" });
+            }
+        }
+        // function toggleChatForm() {
+        //     const chatFormContainer = document.querySelector('.chat-form-container');
+        //     if (chatFormContainer) {
+        //         chatFormContainer.style.display = chatFormContainer.style.display === 'none' ? 'block' : 'none';
+        //     }
+        // }
+
+
+        // const openChatButton = document.getElementById('openChat');
+        // if (openChatButton) {
+        //     openChatButton.addEventListener('click', toggleChatForm);
+        // }
+        $(function () {
+            $("#petAge").datepicker();
+        });
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
+
+
+        const logo = document.getElementById("logoAwwzo");
+        if (logo) {
+            logo.addEventListener("click", scrollToTop);
+        }
+    </script>
+
+
+</body>
+
+</html>

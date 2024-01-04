@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta property="og:image" content="logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 , maximum-scale=1">
+    <meta name="keywords" content="pet boarding , pet ,  boarding ">
+    <meta name="robots" content="INDEX , FOLLOW">
+    <link rel="stylesheet" href="respT.css">
+    <link rel="icon" href="logo.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Roboto+Mono:wght@100;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Work Sans' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Chela One' rel='stylesheet'>
+    <title>Premium Pet Boarding</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+
+        const btn1Text = document.querySelector('.btn1-text');
+        const btn2Text = document.querySelector('.btn2-text');
+
+        window.addEventListener('resize', () => {
+            if (window.innerWidth <= 808) {
+                btn1Text.textContent = btn1Text.dataset.originalText;
+                btn2Text.textContent = "Get Started";
+            } else {
+                btn1Text.textContent = btn1Text.dataset.originalText;
+                btn2Text.textContent = btn2Text.dataset.originalText;
+            }
+        });
+    </script>
+
+
+    <style>
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 60px;
+            background-color: rgb(27, 26, 30);
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+        }
+
+        .header .logo img {
+            width: 54.0000004869779px;
+
+            height: 75.0000006763582px;
+
+            transform: rotate(-10deg);
+            padding-top: 5px;
+
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 60px;
+            background-color: rgb(27, 26, 30);
+            z-index: 1000;
+            display: none;
+            /* Initially hidden */
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .header .logo img {
+            width: 28px;
+            height: 34px;
+            transform: rotate(-10deg);
+            padding-top: 5px;
+        }
+
+        .header .menu-icon {
+            display: block;
+            /* Add your hamburger menu icon image here */
+            background-image: url('ham_menu.svg');
+            background-size: cover;
+            width: 15px;
+            height: 12px;
+            cursor: pointer;
+        }
+
+        @media (max-width: 360px) {
+            .header {
+                display: flex;
+
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <!-- <div class="header">
+
+        <div class="logo">
+            Add your logo image here
+            <img src="logo.png" alt="Logo" id="logoAwwzo">
+        </div>
+        <div class="titleHeader">
+            Add your title here
+            <h1>About Us</h1>
+        </div>
+
+
+    </div> -->
+    <div class="header">
+        <div class="logo">
+            <!-- Add your logo image here -->
+            <img src="logo.png" alt="Logo" id="logoAwwzo">
+        </div>
+        <div class="menu-icon" onclick="toggleMenu()"></div>
+    </div>
+
+    <!-- ... (the rest of your HTML content) ... -->
+
+
+
+    <div class="primary">
+
+
+        <div class="secondary">
+            <div class="tertiary">
+                <div class="firstRow">
+
+
+                    <div class="firstCol">
+                        <div class="contents">
+                            <div class="heading" id="top_header">
+                                <h1 id="ppt">
+                                    AWWZO</h1>
+                            </div>
+                            <div class="subText">
+                                <h2 id="sst">
+                                    Experience a new level of premium pet boarding with our state of the art
+                                    facility
+                                    and highly trained staff.
+                                </h2>
+                            </div>
+                            <div class="buttons">
+                                <div class="btn1">
+                                    <h2 class="btn1-text" onclick="scrollToForm()">
+                                        Claim Access</h2>
+                                </div>
+
+                                <div class="btn2">
+                                    <h2 class="btn2-text" onclick="scrollToServices()">Services</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="secondCol">
+                            <!-- <img class="image" src="./image 35.png" alt="landing-picture" /> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="secondRow" id="target1">
+                    <div class="rowFirst">
+                        <p class="rowTitles"><b>OUR SERVICES</b></p>
+                        <div class="services-container">
+                            <div class="services">
+                                <div class="servicesdetails">
+                                    <img src="boarding.png">
+                                    <p class="titleServices">BOARDING</p>
+                                    <p class="texts1">OVERNIGHT STAY: A safe and comfortable home for pets.</p>
+                                </div>
+                                <div class="servicesdetails">
+                                    <img src="day-care.png">
+                                    <p class="titleServices">DAY CARE</p>
+                                    <p class="texts1">LIMITED STAY: A supervised daytime care for pets.</p>
+                                </div>
+                                <div class="servicesdetails">
+                                    <img src="grooming.png">
+                                    <p class="titleServices">GROOMING</p>
+                                    <p class="texts1">We enhance your pet's physical appearance and hygiene.</p>
+                                </div>
+                                <div class="servicesdetails">
+                                    <img src="training.png">
+                                    <p class="titleServices">TRAINING</p>
+                                    <p class="texts1">We teach and reinforce desired behaviors in pets.</p>
+                                </div>
+                            </div>
+                            <div class="scroll-indicators">
+                                <span class="scroll-dot"></span>
+                                <span class="scroll-dot"></span>
+                                <span class="scroll-dot"></span>
+                                <span class="scroll-dot"></span>
+                                <!-- Add one <span> for each service card -->
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+                <div id="thirdRow">
+                    <div class="rowFirst">
+                        <p class="rowTitles"><b>WHY US?</b></p>
+                        <div class="whyCol">
+                            <div class="services2">
+
+                                <div class="servicesdetails2">
+                                    <img src="in_and_out.png">
+                                    <p class="titleServices">IN AND OUT</p>
+                                    <p class="texts2">Seamless access to both indoor and outdoor areas for comfort in
+                                        any
+                                        weather.</p>
+
+                                </div>
+                                <div class="servicesdetails2">
+                                    <img src="pure_air.png">
+                                    <p class="titleServices">PURE AIR</p>
+                                    <p class="texts2">Utilizing a top-tier medical-grade hvac system and air filters, we
+                                        ensure 100%
+                                        outside air circulation with each cycle.</p>
+                                </div>
+                                <div class="servicesdetails2">
+                                    <img src="dive_in.png">
+                                    <p class="titleServices">DIVE IN</p>
+                                    <p class="texts2">Dive into our in-ground saltwater pool - no further explanation
+                                        needed.</p>
+
+                                </div>
+
+                                <div class="servicesdetails2">
+                                    <img src="squeaky_clean.png">
+                                    <p class="titleServices">SQUEAKY CLEAN</p>
+                                    <p class="texts2">We maintain the highest sanitation standards, equipped with the
+                                        right tools to
+                                        ensure safety.</p>
+
+                                </div>
+                                <div class="servicesdetails2">
+                                    <img src="sure_footed.png">
+                                    <p class="titleServices">SURE FOOTED</p>
+                                    <p class="texts2">Our textured floors offer the perfect paw-friendly grip throughout
+                                        our facility.</p>
+                                </div>
+                                <div class="servicesdetails2">
+                                    <img src="observe.png">
+                                    <p class="titleServices">OBSERVE</p>
+                                    <p class="texts2">Stay connected with your pup through our camera system, whether
+                                        they're in
+                                        daycare or their stay room.</p>
+
+                                </div>
+                            </div>
+                            <div class="scroll-indicators2">
+                                <span class="scroll-dot2"></span>
+                                <span class="scroll-dot2"></span>
+                                <span class="scroll-dot2"></span>
+                                <span class="scroll-dot2"></span>
+                                <span class="scroll-dot2"></span>
+                                <span class="scroll-dot2"></span>
+                                <!-- Add one <span> for each service card -->
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div id="lastRow">
+                    <!-- <div class="emptyBox"></div> -->
+                    <div class="forms" id="target">
+                        <h2 style="font-family: Chela One;letter-spacing: 2px;">AWWZO <span class="logo-small"><img
+                                    src="logo.png" alt="Small Logo"></span>
+                        </h2>
+                        <h1 id='form-title'>Claim Exclusive
+                            Access</h1>
+                        <form id="contactForm" method="POST" name="google-sheet">
+                            <div class="form-group">
+                                <label for="name" style="padding-bottom: 7px;
+                                ">Name :</label>
+                                <input type="text" id="name" name="name" placeholder="Your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" style="padding-bottom: 7px;
+                                    ">Email :</label>
+                                <input type="email" id="email" name="email" placeholder="Your email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone" style="padding-bottom: 7px;
+                                    ">Mobile Number :</label>
+                                <input type="text" id="phone" name="phone" placeholder="Mobile No." required>
+                            </div>
+                            <div class="form-group">
+                                <label for="petName" style="padding-bottom: 7px;
+                                    ">Pet's name :</label>
+                                <input type="text" id="petName" name="petName" placeholder="Pet's name" required>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="petAge" style="padding-bottom: 7px;">Pet's DOB :</label>
+                                    <input type="text" id="petAge" name="petAge" placeholder="DOB" required>
+                                </div>
+                                <div class="form-group" id="petBreedContainer">
+                                    <label for="petBreed" style="padding-bottom: 7px;
+                                        ">Pet's breed:</label>
+                                    <input type="text" id="petBreed" name="petBreed" placeholder="Pet's breed" required>
+                                </div>
+                            </div>
+
+
+                            <div class="form-group claim-button">
+                                <input type="submit" value="CLAIM" name="submit">
+                            </div>
+
+
+                        </form>
+                    </div>
+
+
+
+
+
+                    <!-- </div> -->
+                </div>
+                <!-- <div class="contactUs">
+                </div> -->
+                <div class="footer">
+                    <div class="socials">
+                        <a href="https://twitter.com/iamawwzo"><img class="social-icon" src="x.svg"
+                                alt="Twitter (X)"></a>
+                        <a href="https://www.linkedin.com/company/awwzo"><img class="social-icon" src="lin.svg"
+                                alt="LinkedIn"></a>
+                        <a href="mailto:rahul@awwzo.com"><img class="social-icon" src="mail.svg" alt="Email"></a>
+                        <!-- <a href="#"><img src="icon_.png" alt="icon"></a> -->
+
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        const scrollIndicators = document.querySelectorAll('.scroll-dot');
+        const services = document.querySelector('.services');
+        const cardWidth = services.clientWidth;
+        const totalWidth = services.scrollWidth;
+        const numCards = scrollIndicators.length;
+
+        services.addEventListener('scroll', () => {
+            const scrollPosition = services.scrollLeft;
+
+            // Calculate the index of the active card based on the scroll position
+            let activeIndex = Math.round(scrollPosition / cardWidth);
+
+            // If the user scrolls past the last service to the right, reset scroll position to the first service
+            if (scrollPosition + cardWidth >= totalWidth) {
+                services.scrollLeft = 0;
+                activeIndex = 0;
+            }
+
+            // If the user scrolls left from the first service, go to the last service with smooth scrolling
+            if (scrollPosition === 0) {
+                // Ensure that scrolling to the last service is smooth
+                services.scrollLeft = totalWidth - cardWidth;
+                activeIndex = numCards - 1;
+            }
+
+            // Add 'active' class to the dot corresponding to the active card
+            scrollIndicators[activeIndex].classList.add('active');
+
+            // Remove 'active' class from all other dots
+            scrollIndicators.forEach((dot, index) => {
+                if (index !== activeIndex) {
+                    dot.classList.remove('active');
+                }
+            });
+        });
+
+
+
+
+
+
+
+        const scrollIndicators2 = document.querySelectorAll('.scroll-dot2');
+        const services2 = document.querySelector('.services2');
+        const cardWidth2 = services2.clientWidth;
+        const totalWidth2 = services2.scrollWidth;
+        const numCards2 = scrollIndicators.length;
+
+        services2.addEventListener('scroll', () => {
+            const scrollPosition2 = services2.scrollLeft;
+
+            // Calculate the index of the active card based on the scroll position
+            let activeIndex2 = Math.round(scrollPosition2 / cardWidth2);
+
+            // If the user scrolls past the last service, reset scroll position to the first service
+            if (scrollPosition2 + cardWidth2 >= totalWidth2) {
+                services2.scrollLeft = 0;
+                activeIndex2 = 0;
+            }
+
+            // If the user scrolls left from the first service, go to the last service with smooth scrolling
+            if (scrollPosition2 === 0) {
+                services2.scrollLeft = totalWidth2 - cardWidth;
+                activeIndex2 = numCards2 - 1;
+            }
+
+            // Add 'active' class to the dot corresponding to the active card
+            scrollIndicators2[activeIndex2].classList.add('active');
+
+            // Remove 'active' class from all dots except the active one
+            scrollIndicators2.forEach((dot, index) => {
+                if (index !== activeIndex2) {
+                    dot.classList.remove('active');
+                }
+            });
+        });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        function toggleMenu() {
+            // Add your code to toggle the mobile menu here
+        }
+
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwkogSIMrVWJu842G1GbXvE-kJY4QDSZdNlz4LPO7wEVwRLmuD0e3ewkNr28pkSDz39Eg/exec'
+        const form = document.forms['google-sheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                .catch(error => console.error('Error!', error.message))
+        })
+
+
+        function scrollToServices() {
+            const servicesSection = document.getElementById("target1");
+            if (servicesSection) {
+                servicesSection.scrollIntoView({ behavior: "smooth" });
+            }
+        }
+        function scrollToForm() {
+            const formSection = document.getElementById("target");
+            if (formSection) {
+                formSection.scrollIntoView({ behavior: "smooth" });
+            }
+        }
+        // function toggleChatForm() {
+        //     const chatFormContainer = document.querySelector('.chat-form-container');
+        //     if (chatFormContainer) {
+        //         chatFormContainer.style.display = chatFormContainer.style.display === 'none' ? 'block' : 'none';
+        //     }
+        // }
+
+
+        // const openChatButton = document.getElementById('openChat');
+        // if (openChatButton) {
+        //     openChatButton.addEventListener('click', toggleChatForm);
+        // }
+        $(function () {
+            $("#petAge").datepicker();
+        });
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
+
+
+        const logo = document.getElementById("logoAwwzo");
+        if (logo) {
+            logo.addEventListener("click", scrollToTop);
+        }
+    </script>
+
+
+</body>
+
+</html>
