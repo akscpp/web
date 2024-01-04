@@ -1243,7 +1243,7 @@ input[type="submit"]:hover {
     .contents_content {
         align-items: center;
         padding-left: 0px;
-        /* margin-top: 10%; */
+        margin-top: 10%;
         margin-left: 0%;
     }
 
@@ -1574,6 +1574,7 @@ input[type="submit"]:hover {
     .new_content {
         width: auto;
         /* margin-top: -109%; */
+        /* margin-top: 14%; */
     }
 
     .secondCol {
